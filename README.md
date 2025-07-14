@@ -44,3 +44,17 @@ algorithmic system. It can have multiple models and each of these models should 
 assessments can be processed in an `assessment_card`. Note that `model_card`'s and `assessment_card`'s can be included
 directly into the `system_card` or can be included as separate YAML files with help of a YAML-include mechanism. For
 clarity the latter is preferred and is also used in the examples in the next section.
+
+
+[^1]: Deviation from the Hugging Face specification is in the License field. Hugging Face only accepts dataset id's
+      from [Hugging Face license list](https://huggingface.co/docs/hub/repositories-licenses) while we accept any
+      license from [Open Source License List](https://opensource.org/license).
+
+[^2]: Deviation from the Hugging Face specification is in the `model_index:results:dataset` field. Hugging Face only
+      accepts one dataset, while we accept a list of datasets.
+
+[^3]: Deviation from the Hugging Face specification is in the Dataset Type field. Hugging Face only accepts dataset id's
+      from [Hugging Face datasets](https://hf.co/datasets) while we also allow for any url pointing to the dataset.
+
+[^4]: For this extension to work relevant metrics (such as for example false positive rate) have to be added to the
+      [Hugging Face metrics](https://hf.co//metrics), possibly this can be done in our organizational namespace.
